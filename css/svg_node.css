@@ -1,0 +1,256 @@
+
+/* 
+    Created on : Jan 11, 2021, 1:09:15 PM
+    Author     : KellyCode
+*/
+
+#center_svg {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    width: 24%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+@keyframes star {
+    from {
+        transform: rotateZ(360deg);
+    }
+    to {
+        transform: rotateZ(0deg);
+    }
+}
+
+#ani_star, #ani_box {
+    animation: star 2s infinite linear;
+    transform-origin: center;
+    transform-box: fill-box;
+}
+
+#center_svg #layer5 {
+    display:inline;
+}
+
+@keyframes sliderMotion {
+    0% {
+        transform: translateX(0px);
+    }
+    20% {
+        transform: translateX(160px);
+    }
+    40% {
+        transform: translateX(20px);
+    }
+    60% {
+        transform: translateX(60px);
+    }
+    80% {
+        transform: translateX(220px);
+    }
+    100% {
+        transform: translateX(0px);
+    }
+}
+
+#ani_slider {
+    animation: sliderMotion 4s infinite linear;
+}
+
+@keyframes triMotion {
+    0% {
+        transform: translateX(0px);
+    }
+    20% {
+        transform: translateX(60px);
+    }
+    40% {
+        transform: translateX(120px);
+    }
+    60% {
+        transform: translateX(180px);
+    }
+    80% {
+        transform: translateX(120px);
+    }
+    100% {
+        transform: translateX(0px);
+    }
+}
+
+#aniTriangle_1 {
+    animation: triMotion 2s infinite linear;
+}
+#aniTriangle_2 {
+    animation: triMotion 2.2s infinite linear;
+}
+#aniTriangle_3 {
+    animation: triMotion 2.4s infinite linear;
+}
+#aniTriangle_4 {
+    animation: triMotion 2.6s infinite linear;
+}
+
+@keyframes svgFillAnimation {
+    0% {
+        fill: #549ba4;
+    }
+    5% {
+        fill: none;
+    }
+}
+
+#path_node_c01 {
+    fill:none;
+    fill-opacity:1;
+    stroke:#30575e;
+    stroke-width:1.5;
+    stroke-linecap:butt;
+    stroke-linejoin:bevel;
+    stroke-miterlimit:4;
+    stroke-dasharray:none;
+    stroke-dashoffset:0;
+
+    animation-name: svgFillAnimation;
+    animation-duration: 9.0s;
+    animation-delay: 2.0s;
+    animation-iteration-count: infinite;
+}
+
+#path_node_c02 {
+    fill:none;
+    display:inline;
+    fill-opacity:1;
+    stroke:#30575e;
+    stroke-width:1.5;
+    stroke-linecap:butt;
+    stroke-linejoin:bevel;
+    stroke-miterlimit:4;
+    stroke-dasharray:none;
+    stroke-dashoffset:0;
+
+    animation-name: svgFillAnimation;
+    animation-duration: 9.0s;
+    animation-delay: 1.75s;
+    animation-iteration-count: infinite;
+}
+
+#path_node_c03 {
+    fill:none;
+    display:inline;
+    fill-opacity:1;
+    stroke:#30575e;
+    stroke-width:1.5;
+    stroke-linecap:butt;
+    stroke-linejoin:round;
+    stroke-miterlimit:4;
+    stroke-dasharray:none;
+    stroke-dashoffset:0;
+
+    animation-name: svgFillAnimation;
+    animation-duration: 9.0s;
+    animation-delay: 1.50s;
+    animation-iteration-count: infinite;
+}
+
+#path_node_01 {
+    fill:none;
+    display:inline;
+    stroke:#30575e;
+    stroke-width:1.47183;
+    stroke-linecap:butt;
+    stroke-linejoin:round;
+    stroke-miterlimit:4;
+    stroke-dasharray:none;
+    stroke-opacity:1;
+
+    animation-name: svgFillAnimation;
+    animation-duration: 9.0s;
+    animation-delay: 1.25s;
+    animation-iteration-count: infinite;
+}
+
+#path_node_02 {
+    fill:none;
+    display:inline;
+    stroke:#30575e;
+    stroke-width:1.47183;
+    stroke-linecap:butt;
+    stroke-linejoin:round;
+    stroke-miterlimit:4;
+    stroke-dasharray:none;
+    stroke-opacity:1;
+
+    animation-name: svgFillAnimation;
+    animation-duration: 9.0s;
+    animation-delay: 1.0s;
+    animation-iteration-count: infinite;
+}
+
+#path_node_03 {
+    fill:none;
+    stroke:#30575e;
+    stroke-width:1.5;
+    stroke-linecap:butt;
+    stroke-linejoin:round;
+    stroke-miterlimit:4;
+    stroke-dasharray:none;
+    stroke-opacity:1;
+
+    animation-name: svgFillAnimation;
+    animation-duration: 9.0s;
+    animation-delay: 0.75s;
+    animation-iteration-count: infinite;
+}
+
+#path_node_04 {
+    fill:none;
+    display:inline;
+    stroke:#30575e;
+    stroke-width:1.47183;
+    stroke-linecap:butt;
+    stroke-linejoin:round;
+    stroke-miterlimit:4;
+    stroke-dasharray:none;
+    stroke-opacity:1;
+
+    animation-name: svgFillAnimation;
+    animation-duration: 9.0s;
+    animation-delay: 0.50s;
+    animation-iteration-count: infinite;
+}
+
+#path_node_05 {
+    fill:none;
+    display:inline;
+    stroke:#30575e;
+    stroke-width:1.5;
+    stroke-linecap:butt;
+    stroke-linejoin:round;
+    stroke-miterlimit:4;
+    stroke-dasharray:none;
+    stroke-opacity:1;
+
+    animation-name: svgFillAnimation;
+    animation-duration: 9.0s;
+    animation-delay: 0.25s;
+    animation-iteration-count: infinite;
+}
+
+#path_node_06 {
+    fill:none;
+    display:inline;
+    stroke:#30575e;
+    stroke-width:1.5;
+    stroke-linecap:butt;
+    stroke-linejoin:round;
+    stroke-miterlimit:4;
+    stroke-dasharray:none;
+    stroke-opacity:1;
+
+    animation-name: svgFillAnimation;
+    animation-duration: 9.0s;
+    animation-delay: 0.0s;
+    animation-iteration-count: infinite;
+}
+

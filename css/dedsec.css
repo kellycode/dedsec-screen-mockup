@@ -1,0 +1,224 @@
+
+
+html, body {
+
+    height: 100%;
+    margin: 0px;
+    font-family: sans-serif;
+    background-color: #000000;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+.view_container_z0, .view_container_z1, .view_container_z3 {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    color: white;
+    box-sizing: border-box;
+}
+
+.view_container_z0 {
+    background-color: #000717;
+    z-index: 1000;
+}
+
+.view_container_z1 {
+    background-image: url('../img/mottled_bg.png');
+    z-index: 1001;
+}
+
+.view_container_z3 {
+    z-index: 1002;
+    background: radial-gradient(50% 80px at top center, rgba(77,77,77,0.6), transparent),
+        radial-gradient(80px 50% at left center, rgba(77,77,77,0.3), transparent);
+}
+
+#view_canvas_z2 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+    width:calc(0.24 * 100vw);
+    height:calc(0.24 * 100vw);
+    z-index: 1002;
+}
+
+.grid_lines {
+    background-size: var(--box-wide) var(--box-high);
+    background-position: 0px 0px, 0px 0px, -3px -3px, 0px 0px;
+    background-image:
+        linear-gradient(to right, rgba(255, 255, 255, 0.1) 1px, transparent 1px),
+        linear-gradient(to bottom, rgba(255, 255, 255, 0.1) 1px, transparent 1px),
+        radial-gradient(closest-side at 3px 3px, rgba(255, 255, 255, 0.1) 2px, transparent 3px);
+}
+
+#ds_postal_group {
+    position: absolute;
+    left: 2.5%;
+    top: 2%;
+    width: 8.5%;
+    opacity: 0.5;
+}
+
+#ctos_div {
+    position: absolute;
+    top: 2%; 
+    right: 2.2%;
+    width: calc(0.0625 * 100vw);
+    height: calc(0.025 * 100vw);
+    background-image: url('../svg/ctos_svg_static.svg');
+    background-size: 100% 100%;
+}
+
+.ctos_svg_animates {
+    width: 100%;
+    height: 100%;
+}
+
+.ds_logo_name {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    top: 5%;
+    width: 8%;
+}
+
+.ds_corner {
+    opacity: 0.8;
+}
+
+.dedsec_top_left {
+    position: absolute;
+    left: 2.5%;
+    top: 6.25%;
+    width: 16.41%;
+}
+
+.dedsec_btm_left {
+    position: absolute;
+    left: 2.5%;
+    bottom: 6.25%;
+    width: 16.41%;
+    transform: scaleY(-1);
+}
+
+.dedsec_btm_right {
+    position: absolute;
+    right: 2.5%;
+    bottom: 6.25%;
+    width: 16.41%;
+    transform: scale(-1, -1);
+}
+
+.dedsec_top_right {
+    position: absolute;
+    right: 2.5%;
+    top: 6.25%;
+    width: 16.41%;
+    transform: scale(-1, 1);
+}
+
+.dedsec_ctr_left {
+    position: absolute;
+    top: 50%;
+    left: 9%;
+    width: 29.3%;
+    transform: translateY(-50%);
+}
+
+.dedsec_ctr_right {
+    position: absolute;
+    top: 50%;
+    right: 9%;
+    width: 29.3%;
+    transform:  translateY(-50%);
+}
+
+.dedsec_ctr_circles {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    width: 24%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+.dedsec_ctr_bottom {
+    position: absolute;
+    left: 50%;
+    bottom: 2%;
+    width: 32%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+.dedsec_ctr_top_static {
+    position: absolute;
+    left: 50%;
+    top: 10%;
+    width: 40%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    opacity: 0.6;
+}
+
+#dedsec_ctr_top_animates {
+    position: absolute;
+    left: 50%;
+    top: 10%;
+    width: 40%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    opacity: 0.6;
+}
+
+@keyframes scroller
+{
+    0% {
+        top: 110%;
+    }
+    100% {
+        display: none;
+        top: -10%;
+    }
+}
+
+.scroller_div {
+    position: absolute;
+    left: 0px;
+    top: 110%;
+    width: 100vw;
+    height: calc(0.0336 * 100vw);
+    opacity: 0.3;
+    /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#000000+0,ce7f6d+30,4f9660+45,6c72cc+60,000000+100&0+0,0.64+30,0.64+45,0.64+60,0+100 */
+    background: -moz-linear-gradient(top,  rgba(0,0,0,0) 0%, rgba(206,127,109,0.64) 30%, rgba(79,150,96,0.64) 45%, rgba(108,114,204,0.64) 60%, rgba(0,0,0,0) 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top,  rgba(0,0,0,0) 0%,rgba(206,127,109,0.64) 30%,rgba(79,150,96,0.64) 45%,rgba(108,114,204,0.64) 60%,rgba(0,0,0,0) 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom,  rgba(0,0,0,0) 0%,rgba(206,127,109,0.64) 30%,rgba(79,150,96,0.64) 45%,rgba(108,114,204,0.64) 60%,rgba(0,0,0,0) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', endColorstr='#00000000',GradientType=0 ); /* IE6-9 */
+
+    animation: scroller 30s ease infinite;
+
+}
+
+.beveledBorder {
+    /*    background-color: transparent;*/
+    background-image: linear-gradient(to bottom, #000, #000, #888);
+    background-position: 0% 0%;
+    background-size: 100% 40px, 40px 100%;
+    background-repeat: no-repeat;
+    -webkit-clip-path: polygon(0 0, 100% 0, calc(100% - 40px) 40px, 40px 40px);
+    /*    clip-path: polygon(50% 0%, 100% 0, 100% 35%, 50% 70%, 0 35%, 0;*/
+}
+
+.rotate90 {
+    -webkit-transform: rotate(90deg);
+    -moz-transform: rotate(90deg);
+    -o-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    transform: rotate(90deg);
+}
+
