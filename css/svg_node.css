@@ -100,7 +100,7 @@
     }
 }
 
-#path_node_c01 {
+#center_svg path {
     fill:none;
     fill-opacity:1;
     stroke:#30575e;
@@ -110,7 +110,9 @@
     stroke-miterlimit:4;
     stroke-dasharray:none;
     stroke-dashoffset:0;
+}
 
+#path_node_c01 {
     animation-name: svgFillAnimation;
     animation-duration: 9.0s;
     animation-delay: 2.0s;
@@ -118,17 +120,6 @@
 }
 
 #path_node_c02 {
-    fill:none;
-    display:inline;
-    fill-opacity:1;
-    stroke:#30575e;
-    stroke-width:1.5;
-    stroke-linecap:butt;
-    stroke-linejoin:bevel;
-    stroke-miterlimit:4;
-    stroke-dasharray:none;
-    stroke-dashoffset:0;
-
     animation-name: svgFillAnimation;
     animation-duration: 9.0s;
     animation-delay: 1.75s;
@@ -136,17 +127,6 @@
 }
 
 #path_node_c03 {
-    fill:none;
-    display:inline;
-    fill-opacity:1;
-    stroke:#30575e;
-    stroke-width:1.5;
-    stroke-linecap:butt;
-    stroke-linejoin:round;
-    stroke-miterlimit:4;
-    stroke-dasharray:none;
-    stroke-dashoffset:0;
-
     animation-name: svgFillAnimation;
     animation-duration: 9.0s;
     animation-delay: 1.50s;
@@ -154,16 +134,6 @@
 }
 
 #path_node_01 {
-    fill:none;
-    display:inline;
-    stroke:#30575e;
-    stroke-width:1.47183;
-    stroke-linecap:butt;
-    stroke-linejoin:round;
-    stroke-miterlimit:4;
-    stroke-dasharray:none;
-    stroke-opacity:1;
-
     animation-name: svgFillAnimation;
     animation-duration: 9.0s;
     animation-delay: 1.25s;
@@ -171,16 +141,6 @@
 }
 
 #path_node_02 {
-    fill:none;
-    display:inline;
-    stroke:#30575e;
-    stroke-width:1.47183;
-    stroke-linecap:butt;
-    stroke-linejoin:round;
-    stroke-miterlimit:4;
-    stroke-dasharray:none;
-    stroke-opacity:1;
-
     animation-name: svgFillAnimation;
     animation-duration: 9.0s;
     animation-delay: 1.0s;
@@ -188,15 +148,6 @@
 }
 
 #path_node_03 {
-    fill:none;
-    stroke:#30575e;
-    stroke-width:1.5;
-    stroke-linecap:butt;
-    stroke-linejoin:round;
-    stroke-miterlimit:4;
-    stroke-dasharray:none;
-    stroke-opacity:1;
-
     animation-name: svgFillAnimation;
     animation-duration: 9.0s;
     animation-delay: 0.75s;
@@ -204,16 +155,6 @@
 }
 
 #path_node_04 {
-    fill:none;
-    display:inline;
-    stroke:#30575e;
-    stroke-width:1.47183;
-    stroke-linecap:butt;
-    stroke-linejoin:round;
-    stroke-miterlimit:4;
-    stroke-dasharray:none;
-    stroke-opacity:1;
-
     animation-name: svgFillAnimation;
     animation-duration: 9.0s;
     animation-delay: 0.50s;
@@ -221,16 +162,6 @@
 }
 
 #path_node_05 {
-    fill:none;
-    display:inline;
-    stroke:#30575e;
-    stroke-width:1.5;
-    stroke-linecap:butt;
-    stroke-linejoin:round;
-    stroke-miterlimit:4;
-    stroke-dasharray:none;
-    stroke-opacity:1;
-
     animation-name: svgFillAnimation;
     animation-duration: 9.0s;
     animation-delay: 0.25s;
@@ -238,16 +169,6 @@
 }
 
 #path_node_06 {
-    fill:none;
-    display:inline;
-    stroke:#30575e;
-    stroke-width:1.5;
-    stroke-linecap:butt;
-    stroke-linejoin:round;
-    stroke-miterlimit:4;
-    stroke-dasharray:none;
-    stroke-opacity:1;
-
     animation-name: svgFillAnimation;
     animation-duration: 9.0s;
     animation-delay: 0.0s;

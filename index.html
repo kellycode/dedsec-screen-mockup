@@ -37,28 +37,62 @@
         <link rel="stylesheet" href="css/dedsec.css" >
         <link rel="stylesheet" href="css/svg_node.css">
 
+        <!-- Our Base JS -->
         <script defer src="js/dedsec.js"></script>
+
+        <!-- Random Techy Lines -->
+        <script src="js/techlines/reverse-min.js"></script>
+        <script src="js/techlines/snap.svg-min.js"></script>
+        <script src="js/techlines/TechLIne.js"></script>
+
+        <script>
+            document.addEventListener('DOMContentLoaded', function () {
+                
+                /* START TECH LINES */
+                let SnapBox = Snap('#techlines');
+                SnapBox.group = SnapBox.g();
+
+                let palette = ['#7cd4d4', '#fb29fd', '#4216d2', '#00ff00', '#008000'];
+                
+                let getNextColor = function() {
+                    color = palette.shift();
+                    palette.push(color);
+                    return color;
+                };
+
+                setInterval(function () {
+                    // Your logic here
+                    let color = getNextColor();
+                    new TechLine(SnapBox, box_side, 6000, color, 0.3).initDraw();
+                }, 3000);
+                /* END TECH LINES */
+                
+            }, false);
+
+        </script>
 
     </head>
     <body>
-        
+
         <!-- using three layered (2 transparent) view containers to manage view effects -->
-        <div class="view_container_z0 grid_lines"></div>
+        <div class="view_container_z0 grid_lines">
+            <svg id="techlines" width="100%" height="100%"></svg>
+        </div>
 
         <div class="view_container_z1">
-            
+
             <img id="ds_postal_group" src="svg/dedsec_group.svg" alt=""/>
-            
+
             <!-- corners -->
             <img class="ds_corner dedsec_top_left" src="svg/dedsec_corners.svg" alt=""/>
             <img class="ds_corner dedsec_btm_left" src="svg/dedsec_corners.svg" alt=""/>
             <img class="ds_corner dedsec_btm_right" src="svg/dedsec_corners.svg" alt=""/>
             <img class="ds_corner dedsec_top_right" src="svg/dedsec_corners.svg" alt=""/>
-            
+
             <!-- left and right nodes -->
             <img class="dedsec_ctr_left" src="svg/dedsec_ctr_left.svg" alt=""/>
             <img class="dedsec_ctr_right" src="svg/dedsec_ctr_right.svg" alt=""/>
-            
+
             <!-- just the center circles -->
             <img class="dedsec_ctr_circles" src="svg/dedsec_ctr_circles.svg" alt=""/>
 
@@ -164,7 +198,7 @@
 
             <!-- static bottom center -->
             <img class="dedsec_ctr_bottom" src="svg/dedsec_ctr_bottom.svg" alt=""/>
-            
+
             <!-- top right ctOS animated -->
             <div id="ctos_div">
                 <svg
@@ -207,6 +241,6 @@
         <div class="view_container_z3">
             <div class="scroller_div"></div>
         </div>
-        
+
     </body>
 </html>

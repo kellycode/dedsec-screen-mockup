@@ -9,7 +9,7 @@ let innerRadius = 200; // circle one
 let middleRadius = 230; // circle two
 let outerRadius = 270;
 let arcLength = 360; // just a full circle
-let color = "rgba(50, 100, 100, " + 0.8 + ")";
+let stroke_color = "rgba(50, 100, 100, " + 0.8 + ")";
 let lineWidth = 3;
 
 let degrees = 0;
@@ -75,7 +75,7 @@ function radialLine(degrees) {
 
     ctx.beginPath();
     ctx.setLineDash([2]);
-    ctx.strokeStyle = color;
+    ctx.strokeStyle = stroke_color;
     ctx.lineWidth = lineWidth;
     // the inner busy lines
     ctx.moveTo(innerX, innerY);
