@@ -4,6 +4,6 @@ Just an animated mockup of a watch dogs legion tech screen.  An exercise in maki
 
 [See in action:](https://kellycode.github.io/dedsec-screen-mockup/)
 
-It's just a tech screen look, doesn't do anything.
+It's just an animated tech screen look, doesn't do anything.
 
 ![Dedsec mocup screen shot, techy lines and animations on dark blue background](https://github.com/kellycode/dedsec-screen-mockup/raw/main/social_preview.jpg)
