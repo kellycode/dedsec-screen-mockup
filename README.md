@@ -1,6 +1,6 @@
 # dedsec-screen-mockup
 
-Just an animated mockup of a watch dogs legion tech screen.  An exercise in making and animating SVG images and using css for animations, vs js or svg, as much as possible.  Next up: adding graffiti paint effects.
+Just an exercise in making and animating SVG images and using css for animations, vs js or svg, as much as possible.  Next up: adding graffiti paint effects
 
 [See in action:](https://kellycode.github.io/dedsec-screen-mockup/)
 
